@@ -5,3 +5,7 @@
 
 # dont upload the pycache to GH 
 *pycache*
+
+# ignore swap and backup files
+*.swp
+*~
