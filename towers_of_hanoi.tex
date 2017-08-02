@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{tikz}
+
+\usepackage{fontspec}
+\setmainfont{Source Serif Pro}
+\setsansfont{Source Sans Pro}
+\setmonofont{Source Code Pro}
+
+\title{The Towers of Hanoi: A fun math game in $2^n-1$ easy steps}
+\author{Derek Klinge}
+\date{}
+
+%% Custom Commands
+% Shorthand
+\newcommand{\ToH}{\textbf{Towers of Hanoi}}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+The {\ToH} is a classic puzzle that has intersting mathematical properties. The
+puzzle was first introduced in 1883 by Eduoard Lucas\cite{palmer1996exploring}.
+In this paper, we will primarily consider the classic version of the problem, though many
+interesting variations exist and will be discussed at the end. We will start by
+limiting ourselves to a problem with three disks, and increase the number of
+disks once we sufficiently understand the problem.
+
+The basic version of {\ToH} begins with three towers. All of the disks are
+arranged from larges to smallest on the first tower. Our goal is to move the
+complete stack of disks from the firs tower to the third tower, but we must do
+so following specific rules. 
+
+The first rule is that only one disk may be moved
+at one time. This means that you cannot grab several disks and move them
+together in a single move, you must move each disk seperately. That rule is easy
+enough to follow.
+
+The second rule is slightly more complex. When you move a disk, you cannot ever
+place a large disk on top of a smaller one. This is a bit hard to explain
+without looking at some examples, so we will do that now.
+
+
+\bibliographystyle{plain}
+\bibliography{towers}  
+
+\end{document}

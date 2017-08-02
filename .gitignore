@@ -1,0 +1,7 @@
+## a gitignore for the Towers of Hanoi Paper
+
+# Since you can generate the output, don't upload it to GH
+./OUT/*
+
+# dont upload the pycache to GH 
+*pycache*
